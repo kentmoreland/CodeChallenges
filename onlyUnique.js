@@ -1,25 +1,3 @@
-// Only Unique
-// Given a string, remove any characters that are not unique from the string.
-
-// Input: string
-// Output: string with no dups
-// Constraints/Complexity: none for time complexity
-// Examples:
-// 'x' => 'x'
-// 'xx' => ''
-// 'abccdefe' => 'abdf'
-
-//           **** Pseudocode ****
-//Create an object for sorting
-//Create a result string
-//for each item in the string do this
-  //*add the item to the object
-    //if the item doesn't exist in the object do this
-      //add the item as a key and the and 0 as the value
-    //if the item exists increment the value
-//for each item in the object do this
-  //if the value of the object key is 0 add to the result string
-
 onlyUnique = (string) => {
   string = string.split('');
   let tally = string.reduce((object, letter)=>{
